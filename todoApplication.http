@@ -1,0 +1,27 @@
+###
+POST http://localhost:3000/todos/
+Content-Type: application/json
+
+
+{
+  "id": 2,
+  "todo": "Play",
+  "priority": "MEDIUM",
+  "status": "IN PROGRESS"
+}
+
+###
+PUT http://localhost:3000/todos/2
+Content-Type: application/json
+
+{ "status": "DONE" }
+
+###
+PUT http://localhost:3000/todos/2
+Content-Type: application/json
+
+{ "todo": "DONE" }
+
+###
+
+GET http://localhost:3000/todos/?search_q=Play
